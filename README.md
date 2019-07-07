@@ -3,6 +3,10 @@ joejoe note 07/07/2019 on this fork NOTE 1: I don't know what I'm doing. I just 
 
 joejoe usage note 07/07/2019 NOTE 2: To use this: Essentially follow the the original guy's notes BUT ... we are starting "my version" with the executution of toot.py NOT "run.py." So python3 toot.py when you want to run it on your server. ALSO we are using config.json for limited stuff, NOT the mastodon code and secret code... THAT all is in the newly created (for for this project), "list.txt." Self-explanatory but 0 at the start means to skip it, 1 means to post. ALSO the logging stinks, and it needs many changes, but it will get you started. ALSO if you want to follow-along some instructions (that I used originally tied to this project) go here as you work on this (remembering the rest of this note for differences): https://notes.ayushsharma.in/2018/09/tweet-toot-building-a-bot-for-mastodon-using-python
 
+joejoe usage note 07/07/2019 NOTE 3: You'll need to make this directory "../temp_ids_alreadyposted_keep" from whereever you run the script.
+
+
+
 
 # Tweet-Toot
 Tweet-Toot is a small Python3 project to convert a tweet to a toot. It's basically a Twitter relay for Mastodon.
