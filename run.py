@@ -44,7 +44,7 @@ def runME(twitter_nametopull, mastodon_secret, mastodon_host):
                     '__main__ => Tooting less is tooting more. Sleeping...')
     
                 toot_status = "Success"
-                # vinirem 070519 sys.exit()
+                #   070519 sys.exit()
             else:
                 toot_status = ""
             # helpers._info('__main__ => /============================' + tweet['id'] + '\n\n')
