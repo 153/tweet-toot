@@ -5,6 +5,14 @@ joejoe usage note 07/07/2019 NOTE 2: To use this: Essentially follow the the ori
 
 joejoe usage note 07/07/2019 NOTE 3: You'll need to make this directory "../temp_ids_alreadyposted_keep" from whereever you run the script.
 
+joejoe usage note 07/07/2019 NOTE 4:
+
+WHAT I ADDED:
+1.) It will now loop through a list (list.txt) and toot those accounts, instead of just a one-off.
+2.) A bunch of improvements in handling retweets, skipping post on Twitter if it's "pinned," etc. 
+3.) Will tweet only the  "latest tweet" of the Twitter user. It actually tweets the latest two, which after checking to see if it already tweeted, should tweet only the latest one after the first tweet. It does this in case the first tweet is a "pin" so it doesn't keep retweeting that pinned tweat since we're only looking for the latest tweet. It would skip it since it already would have tweeted but still, it wouldn't go to the next otherwise.
+4.) Who knows what else. Many changes and tweaks, all sloppy but all work which is what I was doing here. Making a proof of concept and something off which one can build.
+
 
 
 
