@@ -11,14 +11,17 @@ def _config(key):
     key {string} -- Name of the key in the config.json file.
     """
 
-    my_file = Path('config.json')
+    # orig....  my_file = Path('config.json')
+    my_file = Path(__file__).parent / 'config.json'
+
     if not my_file.is_file():
 
-        print('--- Main config.json file not found. Exiting.')
+        print('--- Main config.json file not found in helpers_py. Exiting.')
 
         sys.exit()
 
-    config_file = open('config.json')
+    #config_file = open('/bin/scripts/twitter/app_tweet-toot/tweet-toot/config.json')
+    config_file = open(Path(__file__).parent / 'config.json')
     config = config_file.read()
 
     if not config:
