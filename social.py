@@ -110,8 +110,8 @@ def getTweets(twitter_nametopull, mastodon_secret, mastodon_host):
                         tweet_text=tweet_text.replace('http', ' \nhttp') # should be regex this is sloppy in case they already had a space.
                         # change up a specific tweet if you want tweet_text=tweet_text.replace('reassuring.','reassuring. (BOT REPOST)')
                         helpers._info('getTweets() => =============================' + tweet['data-item-id'] + '\n\n')
-                        tweet_text = tweet_text + ' \n\nSource: ' + tweet_url + ' ' + tweet_datetimestamp
-                        tweet_text = tweet_text + '\n\nEND==================\n\nMy other bots: https://pastebin.com/yuwXfDjZ'
+#                        tweet_text = tweet_text + ' \n\nSource: ' + tweet_url + ' ' + tweet_datetimestamp
+#                        tweet_text = tweet_text + '\n\nEND==================\n\nMy other bots: https://pastebin.com/yuwXfDjZ'
                         helpers._info('getTweets() => TWEET TEXT--> ' + tweet_text)
                 if (tweet_error == 0) and (tweet_skip == 0):    
        	                all_tweets.append({"id": tweet_id, "text": tweet_text})
